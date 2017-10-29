@@ -1,0 +1,50 @@
+<DOCTYPE html>
+    <head>
+        <title>Steve Finch's Contact Us Form Lab</title>
+    </head>
+    <body>
+        <form action="#" method="POST">
+            <div>
+                First Name:<input type="text" name="firstName" /><br/>
+                <br/>
+            </div>
+            <div>
+                Last Name:<input type="text" name="lastName" /><br/>
+                <br/>
+            </div>
+            <div>
+                Email:<input type="text" name="email"/><br/>
+                <br/>
+            </div>
+            <div>
+                Type of License: 
+                <input type="radio" name="license" value="business" checked/>Business
+                <input type="radio" name="license" value="personal"/>personal<br/>
+                <br/>
+            </div>
+            <div>
+                Reason:
+                <select name="reasons">
+                    <option value="selectAReason">Select a Reason</option>
+                    <option value="softwareSupport">Software Support</option>
+                    <option value="hardwareSupport">Hardware Support</option>
+                    <option value="informationRequest">Information Request</option>
+                </select><br/>
+                <br/>
+            </div>
+            <div>
+                Additional Information:
+                <textarea id="message" name="message">
+                </textarea><br/>
+                <br/>
+            </div>
+            <div>
+                <input type="checkbox" name="termsOfService" value="read">I have read the terms of service.<br/>
+                <br/>
+            </div>
+            <div>
+                <input type="submit" value="Send Request"/>
+            </div>
+        </form>
+    </body>
+</DOCTYPE>
