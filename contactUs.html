@@ -1,50 +1,115 @@
 <DOCTYPE html>
-    <head>
-        <title>Steve Finch's Contact Us Form Lab</title>
-    </head>
-    <body>
-        <form action="#" method="POST">
-            <div>
-                First Name:<input type="text" name="firstName" /><br/>
-                <br/>
-            </div>
-            <div>
-                Last Name:<input type="text" name="lastName" /><br/>
-                <br/>
-            </div>
-            <div>
-                Email:<input type="text" name="email"/><br/>
-                <br/>
-            </div>
-            <div>
-                Type of License: 
-                <input type="radio" name="license" value="business" checked/>Business
-                <input type="radio" name="license" value="personal"/>personal<br/>
-                <br/>
-            </div>
-            <div>
-                Reason:
-                <select name="reasons">
-                    <option value="selectAReason">Select a Reason</option>
-                    <option value="softwareSupport">Software Support</option>
-                    <option value="hardwareSupport">Hardware Support</option>
-                    <option value="informationRequest">Information Request</option>
-                </select><br/>
-                <br/>
-            </div>
-            <div>
-                Additional Information:
-                <textarea id="message" name="message">
-                </textarea><br/>
-                <br/>
-            </div>
-            <div>
-                <input type="checkbox" name="termsOfService" value="read">I have read the terms of service.<br/>
-                <br/>
-            </div>
-            <div>
-                <input type="submit" value="Send Request"/>
-            </div>
-        </form>
-    </body>
+    <html lang="en">
+            <head>
+                    <title>
+                        Steve Finch's Contact Us Form Lab
+                    </title>
+            </head>
+            <body>
+                <form action="#" method="POST">
+                    <table style="width:50%;">
+                        <tr>
+                            <td style="text-align: right;">
+                                <label for="FirstName" id="FirstNameLabel">First Name: </label>
+                            </td>
+                            <td>
+                                <input type="text" name="FirstName" id="FirstlName" /> 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: right;">
+                                <label for="LastName" id="LastNameLabel">Last Name: </label>
+                            </td>
+                            <td>
+                                <input type="text" name="LastName" id="LastlName" /> 
+                            </td>
+                        </tr>
+
+                        <tr>                            
+                        </tr>
+    
+                        <tr>
+                            <td style="text-align: right;">
+                                <label for="Email" id="EmailLabel">Email: </label>
+                            </td>
+                            <td>
+                                <input type="text" name="Email" id="Email" /> 
+                            </td>
+                        </tr>
+
+                        <tr>                            
+                        </tr>
+
+                        <tr>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: right;" >
+                                <label for="License" id="LicenseLabel">Type of License: </label>
+                            </td>
+                            <td>
+                                <input type="radio" name="License" value="business" checked/>Business
+                                <input type="radio" name="License" value="personal"/>personal
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                        </tr>
+
+                       <tr>
+                           <td style="text-align: right;">
+                                <label for="Reason" id="ReasonLabel">Reason:</label>
+                           </td>
+                           <td>
+                                <select name="reasons">
+                                    <option value="selectAReason">Select a Reason</option>
+                                    <option value="softwareSupport">Software Support</option>
+                                    <option value="hardwareSupport">Hardware Support</option>
+                                    <option value="informationRequest">Information Request</option>
+                                </select>
+                           </td>
+                        </tr>
+                       
+                        <tr>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align: right;">
+                                <label for="AdditionalInformation" id="AdditionalInformationLabel">Additional Information:</label>
+                            </td>
+                            <td>
+                                <textarea id="AdditionalInformation" name="AdditionalInformation"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                        </tr>
+
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="TOS" value="read">
+                                <label for="TOS" id="TOSLabel">I have read the terms of service.</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                        </tr>
+
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <input type="submit" value="Send Request"/>
+                            </td>
+                        </tr>
+                    </table>                                      
+                </form>
+            </body>
+    </html>
 </DOCTYPE>
